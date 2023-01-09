@@ -9,7 +9,7 @@ url = "https://lt-support.revelup.com/specialresources/cart/calculate/"
 headers = {
       "content-type": "application/json",
     "accept": "application/json",
-    "API-AUTHENTICATION":"0113cbd5267847c49fab01658e8c81cb:cb4e9fcf0a154a5fbfb70eb42c2bc4d1549aed0a50da47b7b42c2379d0c158c7"
+    "API-AUTHENTICATION":"secre:secret"
    
 }
 
