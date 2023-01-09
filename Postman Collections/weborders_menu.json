@@ -7,13 +7,16 @@
 	"item": [],
 	"auth": {
 		"type": "apikey",
-		"apikey": {}
+		"apikey": {
+			"key": "hidden",
+			"value": "hidden"
+		}
 	},
 	"event": [
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "36d13268-6fe3-4cce-a36f-fb986414de9f",
+				"id": "8c98044d-c8b9-4545-b102-06859436481d",
 				"type": "text/javascript",
 				"exec": [
 					""
@@ -23,7 +26,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "fa47bc1c-23bc-4dcc-bdb5-e4d1b21dec77",
+				"id": "fd6bb767-234e-4b30-89cf-828c4210f904",
 				"type": "text/javascript",
 				"exec": [
 					"",
@@ -44,7 +47,7 @@
 					"  n ++;",
 					"    }",
 					"",
-					"console.log(respData)",
+					"console.log(respData[0])",
 					"",
 					"",
 					"",
