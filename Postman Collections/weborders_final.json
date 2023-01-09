@@ -1,0 +1,58 @@
+{
+	"info": {
+		"_postman_id": "207c830d-ead3-43e9-8b38-0b8043c908d0",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [],
+	"auth": {
+		"type": "apikey",
+		"apikey": {}
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "36d13268-6fe3-4cce-a36f-fb986414de9f",
+				"type": "text/javascript",
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "fa47bc1c-23bc-4dcc-bdb5-e4d1b21dec77",
+				"type": "text/javascript",
+				"exec": [
+					"",
+					"const response = pm.response.json();",
+					"",
+					"let answer = [];",
+					"let n = 0;",
+					"let respData = []",
+					" for (let key in response.data.categories){",
+					"    answer  = (key,response.data.categories[key]) ;",
+					"    _.each(answer.products, (product) => {if(product.barcode === '100005')",
+					"    respData.push({",
+					"       ",
+					"        name: product.name,",
+					"        price: product.price",
+					"    })",
+					"})",
+					"  n ++;",
+					"    }",
+					"",
+					"console.log(respData)",
+					"",
+					"",
+					"",
+					"",
+					"",
+					""
+				]
+			}
+		}
+	]
+}
